@@ -42,12 +42,13 @@
 }
 
 .link-first-active {
-  color: white !important;
+  color: red !important;
 }
+
 
 .list li a:hover,
 .list li a:focus {
-  color: white;
+  color: red;
 }
 .user-action-area {
   display: flex;
@@ -97,14 +98,6 @@
 .popup-box.active {
   display: unset;
 }
-
-/* .close-model {
-  padding: 0.5rem;
-  width: 100%;
-  font-size: 1.1rem;
-  font-weight: 600;
-  cursor: pointer;
-} */
 
 .overlay {
   top: 0;
@@ -280,7 +273,6 @@
 
 /* video player */
 .player-container {
-  position: absolute;
   box-shadow: 0 0 5px 2px red;
   background-color: black;
   top: 50%;
@@ -288,6 +280,7 @@
   display: none;
   z-index: 5;
   transform: translateY(-50%) translateX(-50%);
+  position: absolute;
 }
 
 .player-close-btn {
@@ -298,11 +291,13 @@
   background-color: red;
 }
 
+#sample-player {
+  height: 100%;
+  width: 100%;
+}
+
 .player-container.active {
   display: unset;
-}
-#sample-player {
-  height: 400px;
 }
 .player-btn-area {
   display: flex;
