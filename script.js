@@ -1,7 +1,7 @@
 
 // Element Collection
 
-const modelOpenBtn = document.querySelectorAll(".open-model")
+const modelOpenBtn = document.querySelector(".open-model")
 const modelPopupBox = document.querySelector(".popup-box")
 const modelPopupCloseBtn = document.querySelector(".close-model")
 const overlayDiv = document.querySelector(".overlay")
