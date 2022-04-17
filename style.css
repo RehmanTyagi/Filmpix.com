@@ -1,0 +1,313 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#hero {
+  background: url(assets/wp5784413-the-batman-movie-2021-robert-pattinson-wallpapers.png),
+    linear-gradient(90deg, #0300b76d 30%, #98030388 100%);
+  background-blend-mode: overlay;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 20%;
+}
+
+/* navbar */
+.navbar {
+  padding: 0.5rem 1em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.list li {
+  list-style-type: none;
+}
+
+.list li a {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: rgb(196, 196, 196);
+}
+
+.link-first-active {
+  color: white !important;
+}
+
+.list li a:hover,
+.list li a:focus {
+  color: white;
+}
+.user-action-area {
+  display: flex;
+  gap: 1rem;
+}
+
+.open-model,
+.create-acc-cta {
+  background-color: transparent !important;
+  border: 1px solid red !important;
+}
+
+/* navbar */
+
+.open-model,
+.sign-in_btn,
+.create-acc-cta,
+.plan-btn {
+  background-color: red;
+  border: none;
+  padding: 0.7rem;
+  width: 8rem;
+  border-radius: 5px;
+  color: white;
+  font-weight: 700;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.open-model:hover {
+  transform: translateY(10px);
+}
+
+.popup-box {
+  background-color: white;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  position: fixed;
+  padding: 1rem;
+  display: none;
+  border-radius: 10px;
+  width: 20rem;
+  z-index: 2;
+}
+
+.popup-box.active {
+  display: unset;
+}
+
+/* .close-model {
+  padding: 0.5rem;
+  width: 100%;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+} */
+
+.overlay {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  display: none;
+  position: fixed;
+  z-index: 1;
+}
+
+.overlay.active {
+  display: unset;
+}
+
+/* all css related to popup box content */
+.input-area {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.text-field {
+  padding: 0.5em;
+  font-size: 1rem;
+  outline-color: blue;
+  border-radius: 5px;
+  border: 1px solid rgba(45, 45, 45, 0.25);
+  background-color: rgba(214, 214, 214, 0.25);
+  box-shadow: 0 0 1px 1px rgba(167, 167, 167, 0.25);
+}
+
+.privacy-policy-area {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.privacy-policy-area a {
+  color: blue;
+  text-decoration: none;
+}
+
+.sign-up_btn,
+.login-btn {
+  padding: 1em;
+  width: 8rem;
+  background-color: blue;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  color: white;
+  border-radius: 0.4rem;
+}
+
+.login-btn {
+  background-color: red;
+  margin-left: 0.5rem;
+  padding: 0.8em;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+}
+
+.logo {
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  margin: 0.5rem;
+}
+
+.sign-up_form__icon {
+  color: black;
+}
+
+.logo > span {
+  color: red;
+}
+.user-sign-up-action {
+  display: flex;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+/* main content */
+.main-content {
+  display: flex;
+  color: white;
+  height: 80vh;
+}
+
+.left-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  margin-left: 100px;
+  color: rgb(188, 188, 188);
+}
+.welcome-line {
+  display: flex;
+  gap: 7rem;
+  align-items: center;
+  height: 0px;
+  font-size: 1.3rem;
+}
+
+.welcome-line hr {
+  transform: rotate(90deg);
+  border-top-width: 10rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+.right-content {
+  display: grid;
+  width: 50%;
+  position: relative;
+  color: rgb(188, 188, 188);
+}
+
+.watch-btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.watch-btn-container > span {
+  background-color: rgb(188, 188, 188);
+  color: red;
+  padding: 0.5em;
+  border-radius: 50%;
+}
+.watch-btn-container a {
+  color: rgb(188, 188, 188);
+}
+
+.dot-active-words {
+  position: absolute;
+  right: -150px;
+  top: 50%;
+  transform: translateY(-50%) rotate(270deg);
+  display: flex;
+  gap: 3rem;
+}
+
+.dot-active-words p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.dot-active-words > p::before {
+  content: "";
+  padding: 0.5em;
+  border-radius: 50%;
+  background-color: red;
+}
+
+/* main content */
+
+/* video player */
+.player-container {
+  position: absolute;
+  box-shadow: 0 0 5px 2px red;
+  background-color: black;
+  top: 50%;
+  left: 50%;
+  display: none;
+  z-index: 5;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+.player-close-btn {
+  color: white;
+  float: right;
+  margin: 0.5rem 1rem 0 0;
+  cursor: pointer;
+  background-color: red;
+}
+
+.player-container.active {
+  display: unset;
+}
+#sample-player {
+  height: 400px;
+}
+.player-btn-area {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+  gap: 0.5rem;
+}
+/* video player */
